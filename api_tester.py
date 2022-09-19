@@ -8,10 +8,10 @@ dotenv_path = Path("project/.env")
 load_dotenv(dotenv_path=dotenv_path)
 
 # NOTE: Adjust these settings as needed in project/.env
-API_HOST = os.getenv("TEST_API_HOST") or "http://localhost:8000"
-RESOURCE_URI = os.getenv("TEST_RESOURCE_URI") or "things"
-USERNAME = os.getenv("TEST_USERNAME")
-PASSWORD = os.getenv("TEST_PASSWORD")
+API_HOST = "http://localhost:8000"
+RESOURCE_URI = "cookie_stand"
+USERNAME = "creator"
+PASSWORD = "123"
 
 
 class ApiTester:

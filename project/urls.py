@@ -1,5 +1,4 @@
 """project URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
 Examples:
@@ -20,7 +19,7 @@ from .views import MyTokenObtainPairView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/v1/things/", include("things.urls")),
+    path("api/v1/cookie_stand/", include("cookie_stand.urls")),
     path("api-auth/", include("rest_framework.urls")),
     path(
         "api/token/",
